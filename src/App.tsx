@@ -165,10 +165,10 @@ function App() {
               { title: "Send to Therapists", cards: sendToTherapistsCards, column: "sendToTherapists" }
             ].map(({ title, cards, column }) => (
               <div key={column}>
-                <div className="bg-transparent border  border-[#91b0c4] shadow-xl rounded-xl">
+                <div className="bg-transparent border  border-[#91b0c3] shadow-xl rounded-xl">
                   <div className="flex justify-between px-5 my-3">
                     <b>{title}</b>
-                    <b className="bg-slate-100 rounded-xl px-3">{cards.length}</b>
+                    <b className="bg-slate-100 rounded-xl px-2">{cards.length}</b>
                   </div>
                   <div className="scrollbar-thin scrollbar-thumb-blue-200 scrollbar-track-blue-100 overflow-y-scroll h-[30rem] px-2">
                     {cards.length === 0 ? (
